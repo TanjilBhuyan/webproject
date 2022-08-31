@@ -7,7 +7,7 @@ import ProductCard from "../Home/ProductCard.js";
 import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import { useAlert } from "react-alert";
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData.js";
 
 const categories = [
@@ -79,7 +79,7 @@ const Products = ({ match }) => {
           </div>
 
           <div className="filterBox">
-            <Typography>Price</Typography>
+            <h2>Price</h2>
             <Slider
               value={price}
               onChange={priceHandler}
@@ -89,7 +89,7 @@ const Products = ({ match }) => {
               max={25000}
             />
 
-            <Typography>Categories</Typography>
+            <h2>Categories</h2>
             <ul className="categoryBox">
               {categories.map((category) => (
                 <li
@@ -103,7 +103,7 @@ const Products = ({ match }) => {
             </ul>
 
             <fieldset>
-              <Typography component="legend">Ratings Above</Typography>
+              <h3 component="legend">Ratings Above</h3>
               <Slider
                 value={ratings}
                 onChange={(e, newRating) => {

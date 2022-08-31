@@ -1,7 +1,7 @@
 .productListContainer {
   width: 100%;
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(95, 100, 170);
   border-left: 1px solid rgba(0, 0, 0, 0.158);
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   font: 400 2rem "Roboto";
   padding: 0.5vmax;
   box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.637);
+  color: rgba(247, 243, 243, 0.945);
   transition: all 0.5s;
   margin: 2rem;
   text-align: center;

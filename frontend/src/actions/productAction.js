@@ -29,7 +29,7 @@ import {
   DELETE_REVIEW_SUCCESS,
   DELETE_REVIEW_FAIL,
   CLEAR_ERRORS,
-} from "../constants/productConstants.js";
+} from "../constants/productConstants";
 
 // Get All Products
 export const getProduct =

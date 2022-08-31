@@ -70,7 +70,6 @@ const Dashboard = () => {
 
       <div className="dashboardContainer">
         <Typography component="h1">Dashboard</Typography>
-
         <div className="dashboardSummary">
           <div>
             <p>

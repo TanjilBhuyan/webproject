@@ -36,6 +36,9 @@ const Profile = ({ history }) => {
                 <p>{user.email}</p>
               </div>
               <div>
+                <h4>Transection Point : 5000</h4>
+              </div>
+              <div>
                 <h4>Joined On</h4>
                 <p>{String(user.createdAt).substr(0, 10)}</p>
               </div>

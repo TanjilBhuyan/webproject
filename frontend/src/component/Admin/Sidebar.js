@@ -39,6 +39,7 @@ const Sidebar = () => {
           </TreeItem>
         </TreeView>
       </Link>
+      
       <Link to="/admin/orders">
         <p>
           <ListAltIcon />
