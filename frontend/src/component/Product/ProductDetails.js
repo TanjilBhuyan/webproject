@@ -6,12 +6,12 @@ import {
   clearErrors,
   getProductDetails,
   newReview,
-} from "../../actions/productAction";
+} from "../../actions/productAction.js";
 import ReviewCard from "./ReviewCard.js";
-import Loader from "../layout/Loader/Loader";
+import Loader from "../layout/Loader/Loader.js";
 import { useAlert } from "react-alert";
-import MetaData from "../layout/MetaData";
-import { addItemsToCart } from "../../actions/cartAction";
+import MetaData from "../layout/MetaData.js";
+import { addItemsToCart } from "../../actions/cartAction.js";
 import {
   Dialog,
   DialogActions,
@@ -20,7 +20,7 @@ import {
   Button,
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
-import { NEW_REVIEW_RESET } from "../../constants/productConstants";
+import { NEW_REVIEW_RESET } from "../../constants/productConstants.js";
 
 const ProductDetails = ({ match }) => {
   const dispatch = useDispatch();

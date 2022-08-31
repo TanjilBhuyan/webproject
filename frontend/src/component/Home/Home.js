@@ -2,10 +2,10 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
-import MetaData from "../layout/MetaData";
-import { clearErrors, getProduct } from "../../actions/productAction";
+import MetaData from "../layout/MetaData.js";
+import { clearErrors, getProduct } from "../../actions/productAction.js";
 import { useSelector, useDispatch } from "react-redux";
-import Loader from "../layout/Loader/Loader";
+import Loader from "../layout/Loader/Loader.js";
 import { useAlert } from "react-alert";
 
 const Home = () => {

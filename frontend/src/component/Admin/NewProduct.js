@@ -9,9 +9,9 @@ import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+//import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import SideBar from "./Sidebar";
-import { NEW_PRODUCT_RESET } from "../../constants/productConstants";
+import { NEW_PRODUCT_RESET } from "../../constants/productConstants.js";
 
 const NewProduct = ({ history }) => {
   const dispatch = useDispatch();
@@ -113,7 +113,7 @@ const NewProduct = ({ history }) => {
               />
             </div>
             <div>
-              <AttachMoneyIcon/>
+              
               <input
                 type="number"
                 placeholder="Price"

@@ -1,11 +1,11 @@
 import React, { Fragment, useState, useEffect } from "react";
 import "./UpdatePassword.css";
-import Loader from "../layout/Loader/Loader";
+import Loader from "../layout/Loader/Loader.js";
 import { useDispatch, useSelector } from "react-redux";
-import { clearErrors, updatePassword } from "../../actions/userAction";
+import { clearErrors, updatePassword } from "../../actions/userAction.js";
 import { useAlert } from "react-alert";
-import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants";
-import MetaData from "../layout/MetaData";
+import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants.js";
+import MetaData from "../layout/MetaData.js";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import LockIcon from "@material-ui/icons/Lock";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";

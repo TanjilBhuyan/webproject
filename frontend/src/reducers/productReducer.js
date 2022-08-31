@@ -41,7 +41,7 @@ import {
   DELETE_REVIEW_RESET,
   
   CLEAR_ERRORS,
-} from "../constants/productConstants";
+} from "../constants/productConstants.js";
 
 export const productsReducer = (state = { products: [] }, action) => {
   switch (action.type) {

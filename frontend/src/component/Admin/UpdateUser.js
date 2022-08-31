@@ -2,12 +2,12 @@ import React, { Fragment, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import { Button } from "@material-ui/core";
-import MetaData from "../layout/MetaData";
+import MetaData from "../layout/MetaData.js";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PersonIcon from "@material-ui/icons/Person";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import SideBar from "./Sidebar";
-import { UPDATE_USER_RESET } from "../../constants/userConstants";
+import SideBar from "./Sidebar.js";
+import { UPDATE_USER_RESET } from "../../constants/userConstants.js";
 import {
   getUserDetails,
   updateUser,
@@ -111,6 +111,7 @@ const UpdateUser = ({ history, match }) => {
                 <select value={role} onChange={(e) => setRole(e.target.value)}>
                   <option value="">Choose Role</option>
                   <option value="admin">Admin</option>
+                  <option value="supplier">Supplier</option>
                   <option value="user">User</option>
                 </select>
               </div>

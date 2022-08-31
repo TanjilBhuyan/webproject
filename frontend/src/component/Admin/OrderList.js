@@ -8,13 +8,13 @@ import { Button } from "@material-ui/core";
 import MetaData from "../layout/MetaData";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
-import SideBar from "./Sidebar";
+import SideBar from "./Sidebar.js";
 import {
   deleteOrder,
   getAllOrders,
   clearErrors,
-} from "../../actions/orderAction";
-import { DELETE_ORDER_RESET } from "../../constants/orderConstants";
+} from "../../actions/orderAction.js";
+import { DELETE_ORDER_RESET } from "../../constants/orderConstants.js";
 
 const OrderList = ({ history }) => {
   const dispatch = useDispatch();

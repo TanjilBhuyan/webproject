@@ -1,14 +1,14 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./Products.css";
 import { useSelector, useDispatch } from "react-redux";
-import { clearErrors, getProduct } from "../../actions/productAction";
-import Loader from "../layout/Loader/Loader";
-import ProductCard from "../Home/ProductCard";
+import { clearErrors, getProduct } from "../../actions/productAction.js";
+import Loader from "../layout/Loader/Loader.js";
+import ProductCard from "../Home/ProductCard.js";
 import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import { useAlert } from "react-alert";
 import Typography from "@material-ui/core/Typography";
-import MetaData from "../layout/MetaData";
+import MetaData from "../layout/MetaData.js";
 
 const categories = [
   "Laptop",

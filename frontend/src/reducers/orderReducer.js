@@ -22,7 +22,7 @@ import {
   ORDER_DETAILS_SUCCESS,
   ORDER_DETAILS_FAIL,
   CLEAR_ERRORS,
-} from "../constants/orderConstants";
+} from "../constants/orderConstants.js";
 
 export const newOrderReducer = (state = {}, action) => {
   switch (action.type) {

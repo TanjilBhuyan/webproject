@@ -8,9 +8,9 @@ import { Button } from "@material-ui/core";
 import MetaData from "../layout/MetaData";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
-import SideBar from "./Sidebar";
-import { getAllUsers, clearErrors, deleteUser } from "../../actions/userAction";
-import { DELETE_USER_RESET } from "../../constants/userConstants";
+import SideBar from "./Sidebar.js";
+import { getAllUsers, clearErrors, deleteUser } from "../../actions/userAction.js";
+import { DELETE_USER_RESET } from "../../constants/userConstants.js";
 
 const UsersList = ({ history }) => {
   const dispatch = useDispatch();
@@ -72,7 +72,7 @@ const UsersList = ({ history }) => {
       minWidth: 150,
       flex: 0.3,
       cellClassName: (params) => {
-        return params.getValue(params.id, "role") === "admin"
+        return params.getValue(params.id, "role") === "admin" 
           ? "greenColor"
           : "redColor";
       },
