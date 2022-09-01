@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useRef } from "react";
 import CheckoutSteps from "../Cart/CheckoutSteps";
 import { useSelector, useDispatch } from "react-redux";
 import MetaData from "../layout/MetaData";
-import { Typography } from "@material-ui/core";
+//import { Typography } from "@material-ui/core";
 import { useAlert } from "react-alert";
 import {
   CardNumberElement,
@@ -120,7 +120,7 @@ const Payment = ({ history }) => {
       <CheckoutSteps activeStep={2} />
       <div className="paymentContainer">
         <form className="paymentForm" onSubmit={(e) => submitHandler(e)}>
-          <Typography>Card Info</Typography>
+          <h2>Card Info</h2>
           <div>
             <CreditCardIcon />
             <CardNumberElement className="paymentInput" />

@@ -1,7 +1,7 @@
 import React from "react";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import "./orderSuccess.css";
-import { Typography } from "@material-ui/core";
+//import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 const OrderSuccess = () => {
@@ -9,7 +9,7 @@ const OrderSuccess = () => {
     <div className="orderSuccess">
       <CheckCircleIcon />
 
-      <Typography>Your Payment has been successfully </Typography>
+      <h1>Your Payment has been successfully </h1>
       <Link to="/orders">View Orders</Link>
     </div>
   );

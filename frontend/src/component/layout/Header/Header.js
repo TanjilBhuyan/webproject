@@ -5,7 +5,7 @@ import logo from "../../../images/logo.png";
 const options = {
   burgerColorHover: "#eb4034",
   logo,
-  logoTransition:"0.10",
+  logoTransition:".10",
   logoWidth: "20vmax",
   navColor1: "#e6c845",
   logoHoverSize: "10px",
@@ -49,3 +49,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

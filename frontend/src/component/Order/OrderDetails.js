@@ -3,7 +3,7 @@ import "./orderDetails.css";
 import { useSelector, useDispatch } from "react-redux";
 import MetaData from "../layout/MetaData.js";
 import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
+//import { Typography } from "@material-ui/core";
 import { getOrderDetails, clearErrors } from "../../actions/orderAction.js";
 import Loader from "../layout/Loader/Loader.js";
 import { useAlert } from "react-alert";
@@ -31,10 +31,10 @@ const OrderDetails = ({ match }) => {
           <MetaData title="Order Details" />
           <div className="orderDetailsPage">
             <div className="orderDetailsContainer">
-              <Typography component="h1">
+              <h2 component="h1">
                 Order #{order && order._id}
-              </Typography>
-              <Typography>Shipping Info</Typography>
+              </h2>
+              <h2>Shipping Info</h2>
               <div className="orderDetailsContainerBox">
                 <div>
                   <p>Name:</p>
@@ -54,7 +54,7 @@ const OrderDetails = ({ match }) => {
                   </span>
                 </div>
               </div>
-              <Typography>Payment</Typography>
+              <h2>Payment</h2>
               <div className="orderDetailsContainerBox">
                 <div>
                   <p
@@ -78,7 +78,7 @@ const OrderDetails = ({ match }) => {
                 </div>
               </div>
 
-              <Typography>Order Status</Typography>
+              <h2>Order Status</h2>
               <div className="orderDetailsContainerBox">
                 <div>
                   <p
@@ -95,7 +95,7 @@ const OrderDetails = ({ match }) => {
             </div>
 
             <div className="orderDetailsCartItems">
-              <Typography>Order Items:</Typography>
+              <h2>Order Items:</h2>
               <div className="orderDetailsCartItemsContainer">
                 {order.orderItems &&
                   order.orderItems.map((item) => (

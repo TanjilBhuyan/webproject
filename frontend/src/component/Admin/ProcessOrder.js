@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import MetaData from "../layout/MetaData";
 import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
+//import { Typography } from "@material-ui/core";
 import SideBar from "./Sidebar.js";
 import {
   getOrderDetails,
@@ -69,7 +69,7 @@ const ProcessOrder = ({ history, match }) => {
             >
               <div>
                 <div className="confirmshippingArea">
-                  <Typography>Shipping Info</Typography>
+                  <h2>Shipping Info</h2>
                   <div className="orderDetailsContainerBox">
                     <div>
                       <p>Name:</p>
@@ -90,7 +90,7 @@ const ProcessOrder = ({ history, match }) => {
                     </div>
                   </div>
 
-                  <Typography>Payment</Typography>
+                  <h2>Payment</h2>
                   <div className="orderDetailsContainerBox">
                     <div>
                       <p
@@ -114,7 +114,7 @@ const ProcessOrder = ({ history, match }) => {
                     </div>
                   </div>
 
-                  <Typography>Order Status</Typography>
+                  <h2>Order Status</h2>
                   <div className="orderDetailsContainerBox">
                     <div>
                       <p
@@ -130,7 +130,7 @@ const ProcessOrder = ({ history, match }) => {
                   </div>
                 </div>
                 <div className="confirmCartItems">
-                  <Typography>Your Cart Items:</Typography>
+                  <h2>Your Cart Items:</h2>
                   <div className="confirmCartItemsContainer">
                     {order.orderItems &&
                       order.orderItems.map((item) => (

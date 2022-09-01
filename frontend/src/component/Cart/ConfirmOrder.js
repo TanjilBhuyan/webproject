@@ -43,7 +43,7 @@ const ConfirmOrder = ({ history }) => {
       <div className="confirmOrderPage">
         <div>
           <div className="confirmshippingArea">
-            <Typography>Shipping Info</Typography>
+            <h2>Shipping Info</h2>
             <div className="confirmshippingAreaBox">
               <div>
                 <p>Name:</p>
@@ -60,7 +60,7 @@ const ConfirmOrder = ({ history }) => {
             </div>
           </div>
           <div className="confirmCartItems">
-            <Typography>Your Cart Items:</Typography>
+            <h2>Your Cart Items:</h2>
             <div className="confirmCartItemsContainer">
               {cartItems &&
                 cartItems.map((item) => (
