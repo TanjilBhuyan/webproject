@@ -10,6 +10,9 @@
   border-left: 1px solid rgba(0, 0, 0, 0.13);
   background-color: rgb(255, 255, 255);
   padding: 3rem 0;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(95, 100, 170)
 }
 
 .dashboardContainer > h1 {

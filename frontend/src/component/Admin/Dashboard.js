@@ -69,7 +69,7 @@ const Dashboard = () => {
       <Sidebar />
 
       <div className="dashboardContainer">
-        <Typography component="h1">Dashboard</Typography>
+        <h2 component="h1">Dashboard</h2>
         <div className="dashboardSummary">
           <div>
             <p>
